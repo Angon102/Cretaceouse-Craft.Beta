@@ -13,10 +13,10 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -28,57 +28,29 @@ import net.minecraftforge.common.ToolAction;
 
 import java.util.Map;
 
-import static net.minecraft.world.level.block.Block.popResource;
-
 public class FossilCutterItem extends Item {
-    private static final Map<Block, Block> FossilCutterItem_MAP =
-            Map.of(
-                    ModBlocks.FOSSIL_BLOCK_1.get(), Blocks.STONE,
-                    ModBlocks.FOSSIL_BLOCK_2.get(), Blocks.STONE
-            );
-    private boolean flag;
-
-    public static void dropfossil(Level pLevel, BlockPos pPos) {
-
+    public FossilCutterItem(Properties properties) {
+        super(properties);
     }
-
-    public FossilCutterItem(Properties pProperties) {
-        super(pProperties);
-    }
-
-    public static final ToolAction FOSSIL_CUTTER_HARVEST = ToolAction.get("fossil_cutter_harvest");
 
     @Override
-    public InteractionResult useOn(UseOnContext pContext) {
-        Level level = pContext.getLevel();
-        Block clickedBlock = level.getBlockState(pContext.getClickedPos()).getBlock();
+    public InteractionResult useOn(UseOnContext context) {
+        Level level = context.getLevel();
+        BlockPos pos = context.getClickedPos();
 
-        if (FossilCutterItem_MAP.containsKey(clickedBlock)) {
-            if (!level.isClientSide()) {
-                level.setBlockAndUpdate(pContext.getClickedPos(), FossilCutterItem_MAP.get(clickedBlock).defaultBlockState());
+        // Check if the block is a fossil block
+        if (!level.isClientSide && level.getBlockState(pos).getBlock() == ModBlocks.FOSSIL_BLOCK_2.get()) {
+            // Replace the fossil block with stone
+            level.setBlock(pos, Blocks.STONE.defaultBlockState(), 3);
 
-                pContext.getItemInHand().hurtAndBreak(1, ((ServerLevel) level), ((ServerPlayer) pContext.getPlayer()),
-                        item -> pContext.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
+            // Drop the triceratops skull item
+            ItemEntity skullDrop = new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), ModItems.TRICERATOPS_SKULL.get().getDefaultInstance());
+            level.addFreshEntity(skullDrop);
 
-                level.playSound(null, pContext.getClickedPos(), SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS);
-            }
+            // Return success
+            return InteractionResult.SUCCESS;
         }
 
-        return InteractionResult.SUCCESS;
-    }
-
-    protected ItemInteractionResult useItemOn(
-            ItemStack pStack, BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHitResult
-    ) {
-        if (pStack.canPerformAction(ModToolActions.FOSSIL_CUTTER_HARVEST)) {
-            pLevel.playSound(
-                    pPlayer, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), SoundEvents.BEEHIVE_SHEAR, SoundSource.BLOCKS, 1.0F, 1.0F
-            );
-            dropfossil(pLevel, pPos);
-            pStack.hurtAndBreak(1, pPlayer, LivingEntity.getSlotForHand(pHand));
-            flag = true;
-            pLevel.gameEvent(pPlayer, GameEvent.SHEAR, pPos);
-        }
-        return null;
+        return super.useOn(context);
     }
 }

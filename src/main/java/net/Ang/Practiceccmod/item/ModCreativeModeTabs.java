@@ -23,13 +23,13 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.AMBER.get());
                         output.accept(ModItems.GYPSUM_POWDER.get());
-                        output.accept(ModItems.TRICERATOPS_RIBCAGE.get());
-                        output.accept(ModItems.TRICERATOPS_HORN.get());
                         output.accept(ModItems.PLASTER_AND_BANDAGE.get());
-                        output.accept(ModItems.TRICERATOPS_EGG.get());
-                        output.accept(ModItems.HATCHED_TRICERATOPS_EGG.get());
                         output.accept(ModItems.RAW_PLATINUM.get());
                         output.accept(ModItems.PLATINUM_INGOT.get());
+                        output.accept(ModItems.MOSQUITO_IN_AMBER.get());
+                        output.accept(ModItems.MOSQUITO_IN_AMBER.get());
+                        output.accept(ModItems.MOSQUITO_IN_AMBER.get());
+                        output.accept(ModItems.TAR.get());
 
                     }).build());
 
@@ -46,7 +46,23 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.TOMATO_SEEDS.get());
                         output.accept(ModItems.CABBAGE_SEEDS.get());
                         output.accept(ModItems.CABBAGE.get());
+                        output.accept(ModItems.PINEAPPLE.get());
 
+                    }).build());
+
+    public static final RegistryObject<CreativeModeTab> GENETIC_TAB = CREATIVE_MODE_TABS.register("genetic_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SYRINGE.get()))
+                    .title(Component.translatable( "creativetab.practiceccmod.Genetic"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.SYRINGE.get());
+                        output.accept(ModItems.SYRINGE_TIP.get());
+                        output.accept(ModItems.TRICERATOPS_SYRINGE.get());
+                        output.accept(ModItems.TRICERATOPS_EGG.get());
+                        output.accept(ModItems.TRICERATOPS_HORN.get());
+                        output.accept(ModItems.TRICERATOPS_RIBCAGE.get());
+                        output.accept(ModItems.TRICERATOPS_SKULL.get());
+                        output.accept(ModBlocks.CLEANING_STATION.get());
+                        output.accept(ModBlocks.FOSSIL_GRINDER.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> TOOLS_TAB = CREATIVE_MODE_TABS.register("tools_tab",
@@ -65,11 +81,11 @@ public class ModCreativeModeTabs {
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> FOSSIL_Block_TAB = CREATIVE_MODE_TABS.register("fossil_block_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.FOSSIL_BLOCK_1.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.FOSSIL_1.get()))
                     .withTabsBefore(FOSSIL_ITEM_TAB.getId())
                     .title(Component.translatable( "creativetab.practiceccmod.fossil_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModBlocks.FOSSIL_BLOCK_1.get());
+                        output.accept(ModBlocks.FOSSIL_1.get());
                         output.accept(ModBlocks.FOSSIL_BLOCK_2.get());
                         output.accept(ModBlocks.GYPSUM.get());
                         output.accept(ModBlocks.AMBER_ORE.get());
@@ -82,6 +98,12 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.PLATINUM_ORE.get());
                         output.accept(ModBlocks.RAW_PLATINUM_BLOCK.get());
                         output.accept(ModBlocks.DEEPSLATE_PLATINUM_ORE.get());
+                        output.accept(ModBlocks.FOSSIL_GRINDER.get());
+                        output.accept(ModBlocks.PLATINUM_BLOCK.get());
+                        output.accept(ModBlocks.TAR_BLOCK.get());
+                        output.accept(ModBlocks.GINKGOES_LOG.get());
+                        output.accept(ModBlocks.GINKGOES_PLANKS.get());
+                        output.accept(ModBlocks.GINKGOES_LEAVES.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

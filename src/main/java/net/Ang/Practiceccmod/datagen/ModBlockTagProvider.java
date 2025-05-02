@@ -29,7 +29,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
             .add(ModBlocks.PLATINUM_ORE.get())
             .add(ModBlocks.RAW_PLATINUM_BLOCK.get())
             .add(ModBlocks.AMBER_ORE.get())
-            .add(ModBlocks.DEEPSLATE_PLATINUM_ORE.get());
+            .add(ModBlocks.DEEPSLATE_PLATINUM_ORE.get())
+            .add(ModBlocks.TAR_BLOCK.get());
+
 
     tag(BlockTags.NEEDS_IRON_TOOL)
             .add(ModBlocks.AMBER_BLOCK.get())
@@ -39,7 +41,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
             .add(ModBlocks.AMBER_ORE.get());
     tag(BlockTags.NEEDS_STONE_TOOL)
             .add(ModBlocks.CLEANING_STATION.get())
-            .add(ModBlocks.GYPSUM.get());
+            .add(ModBlocks.GYPSUM.get())
+            .add(ModBlocks.TAR_BLOCK.get());
     tag(BlockTags.NEEDS_DIAMOND_TOOL)
             .add(ModBlocks.PLATINUM_ORE.get())
             .add(ModBlocks.RAW_PLATINUM_BLOCK.get())
@@ -48,5 +51,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
             .add(ModBlocks.PLATINUM_ORE.get())
             .add(ModBlocks.RAW_PLATINUM_BLOCK.get())
             .add(ModBlocks.DEEPSLATE_PLATINUM_ORE.get());
+    this.tag(BlockTags.LOGS_THAT_BURN)
+            .add(ModBlocks.GINKGOES_WOOD.get())
+            .add(ModBlocks.GINKGOES_LOG.get())
+            .add(ModBlocks.STRIPPED_GINKGOES_LOG.get())
+            .add(ModBlocks.STRIPPED_GINKGOES_WOOD.get());
     }
 }

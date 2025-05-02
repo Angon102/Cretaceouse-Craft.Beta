@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"1": "Practiceccmod:block/cleaning_station",
-		"particle": "Practiceccmod:block/cleaning_station"
+		"1": "practiceccmod:block/cleaning_station_texture",
+		"particle": "practiceccmod:block/cleaning_station_texture"
 	},
 	"elements": [
 		{

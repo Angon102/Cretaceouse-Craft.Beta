@@ -23,11 +23,19 @@
   "item.practiceccmod.chard_egg":"Chard Egg",
   "item.practiceccmod.cooked_tomato":"Cooked Tomato",
   "item.practiceccmod.tomato_seed":"Tomato Seed",
-  "item.practiceccmod.cabbage_seed":"Cabbage Seed",
+  "item.practiceccmod.cabbage_seeds":"Cabbage Seeds",
+  "item.practiceccmod.mosquito_in_amber":"Mosquito in Amber",
+  "item.practiceccmod.syringe_tip":"Syringe Tip",
+  "item.practiceccmod.syringe":"Syringe",
+  "item.practiceccmod.triceratops_syringe":"Triceratops Syringe",
+  "item.practiceccmod.triceratops_skull":"Triceratops Skull",
+  "item.practiceccmod.tar":"Tar",
 
-  "block.practiceccmod.fossil_block_1": "Fossil Block",
+  "block.practiceccmod.deepslate_fossil_1": "Deepslate Fossil Block",
+  "block.practiceccmod.fossil_1": "Fossil Block",
   "block.practiceccmod.fossil_block_2": "Fossil Block",
-  "block.practiceccmod.gypsum_block": "Block of Gypsum",
+  "block.practiceccmod.gypsum_block": "Gypsum Block",
+  "block.practiceccmod.platinum_block": "Platinum Block",
   "block.practiceccmod.amber_ore": "Amber Ore",
   "block.practiceccmod.deepslate_amber_ore": "Deepslate Amber Ore",
   "block.practiceccmod.amber_block": "Amber Block",
@@ -37,12 +45,25 @@
   "block.practiceccmod.platinum_ore": "Platinum Ore",
   "block.practiceccmod.deepslate_platinum_ore": "Deepslate Platinum Ore",
   "block.practiceccmod.raw_platinum_block": "Raw Platinum Block",
-  "block.practiceccmod.tomato_crop": "Raw Platinum Block",
+  "block.practiceccmod.tar_block": "Tar Block",
+
+  "block.practiceccmod.ginkgoes_wood": "Ginkgoes Wood",
+  "block.practiceccmod.stripped_ginkgoes_wood": "Stripped Ginkgoes Wood",
+  "block.practiceccmod.ginkgoes_log": "Ginkgoes Log",
+  "block.practiceccmod.stripped_ginkgoes_log": "Stripped Ginkgoes Log",
+  "block.practiceccmod.ginkgoes_leaves": "Ginkgoes Leaves",
+  "block.practiceccmod.ginkgoes_planks": "Ginkgoes Planks",
+  "block.practiceccmod.ginkgoes_sapling": "Ginkgoes Sapling",
 
   "block.practiceccmod.cleaning_station": "Cleaning Station",
+  "block.practiceccmod.fossil_grinder": "Fossil Grinder",
+
+  "painting.practiceccmod.triceratops_mural.title": "Triceratops Mural",
+  "painting.practiceccmod.triceratops_mural.author": "Angon102",
 
   "creativetab.practiceccmod.fossil_items": "fossil items",
-  "creativetab.practiceccmod.fossil_blocks": "fossil blocks",
+  "creativetab.practiceccmod.fossil_blocks": "Mod blocks",
   "creativetab.practiceccmod.Tools": "Tools",
-  "creativetab.practiceccmod.food_tab": "Food"
+  "creativetab.practiceccmod.food_tab": "Food",
+  "creativetab.practiceccmod.Genetic": "Genetic"
 }

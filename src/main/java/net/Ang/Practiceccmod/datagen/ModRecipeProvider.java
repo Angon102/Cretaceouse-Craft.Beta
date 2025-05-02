@@ -37,9 +37,48 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("AAA")
                 .define('A', ModItems.AMBER.get())
                 .unlockedBy(getHasName(ModItems.AMBER.get()), has(ModItems.AMBER.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped((RecipeCategory.MISC), ModBlocks.TAR_BLOCK.get())
+                .pattern("AA ")
+                .pattern("AA ")
+                .pattern("   ")
+                .define('A', ModItems.TAR.get())
+                .unlockedBy(getHasName(ModItems.TAR.get()), has(ModItems.TAR.get())).save(pRecipeOutput);
+
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.TAR.get(), 4)
+                .requires(ModBlocks.TAR_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.TAR_BLOCK.get()), has(ModBlocks.TAR_BLOCK.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped((RecipeCategory.MISC), ModItems.SYRINGE.get())
+                .pattern(" A ")
+                .pattern(" A ")
+                .pattern(" B ")
+                .define('A', Items.GLASS)
+                .define('B', ModItems.SYRINGE_TIP.get())
+                .unlockedBy(getHasName(ModItems.SYRINGE_TIP.get()), has(ModItems.SYRINGE_TIP.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped((RecipeCategory.MISC), ModItems.SYRINGE_TIP.get())
+                .pattern(" A ")
+                .pattern(" A ")
+                .define('A', Items.IRON_INGOT)
+                .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT)).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PLATINUM_BLOCK.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.PLATINUM_INGOT.get())
+                .unlockedBy(getHasName(ModItems.PLATINUM_INGOT.get()), has(ModItems.PLATINUM_INGOT.get())).save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PLATINUM_INGOT.get(), 9)
+                .requires(ModBlocks.PLATINUM_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.PLATINUM_BLOCK.get()), has(ModBlocks.PLATINUM_BLOCK.get())).save(pRecipeOutput);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.AMBER.get(), 9)
                 .requires(ModBlocks.AMBER_BLOCK.get())
         .unlockedBy(getHasName(ModBlocks.AMBER_BLOCK.get()), has(ModBlocks.AMBER_BLOCK.get())).save(pRecipeOutput);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RAW_PLATINUM_BLOCK.get())
                 .pattern("AAA")
                 .pattern("AAA")

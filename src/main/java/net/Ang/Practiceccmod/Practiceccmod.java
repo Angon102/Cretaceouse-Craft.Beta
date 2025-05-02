@@ -4,7 +4,6 @@ import com.mojang.logging.LogUtils;
 import net.Ang.Practiceccmod.block.ModBlocks;
 import net.Ang.Practiceccmod.item.ModCreativeModeTabs;
 import net.Ang.Practiceccmod.item.ModItems;
-import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -42,7 +41,6 @@ public class Practiceccmod {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
-
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -68,8 +66,17 @@ public class Practiceccmod {
             event.accept(ModItems.TRICERATOPS_HORN);
         }
         if(event.getTabKey()  == CreativeModeTabs.BUILDING_BLOCKS){
-            event.accept(ModBlocks.FOSSIL_BLOCK_1);
+            event.accept(ModBlocks.FOSSIL_1);
             event.accept(ModBlocks.FOSSIL_BLOCK_2);
+        }
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES){
+            event.accept(ModItems.PLATINUM_SWORD);
+            event.accept(ModItems.PLATINUM_AXE);
+            event.accept(ModItems.PLATINUM_PICKAXE);
+            event.accept(ModItems.PLATINUM_HAMMER);
+            event.accept(ModItems.PLATINUM_HOE);
+            event.accept(ModItems.PLATINUM_SHOVEL);
+
         }
     }
     // You can use SubscribeEvent and let the Event Bus discover methods to call

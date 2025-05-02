@@ -17,6 +17,9 @@ public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_DEEPSLATE_AMBER_ORE = registerKey("add_deepslate_amber_ore");
     public static final ResourceKey<BiomeModifier> ADD_PLATINUM_ORE = registerKey("add_platinum_ore");
     public static final ResourceKey<BiomeModifier> ADD_DEEPSLATE_PLATINUM_ORE = registerKey("add_deepslate_platinum_ore");
+    public static final ResourceKey<BiomeModifier> ADD_GYPSUM = registerKey("add_gypsum");
+    public static final ResourceKey<BiomeModifier> ADD_FOSSIL_1 = registerKey("add_fossil_1");
+    public static final ResourceKey<BiomeModifier> ADD_FOSSIL_2 = registerKey("add_fossil_2");
 
 
     public static void bootstrap(BootstrapContext<BiomeModifier> context) {
@@ -28,6 +31,11 @@ public class ModBiomeModifiers {
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.AMBER_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
+        context.register(ADD_GYPSUM, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.GYPSUM_PLACED_KEY)),
+                GenerationStep.Decoration.RAW_GENERATION));
+
         context.register(ADD_DEEPSLATE_AMBER_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.DEEPSLATE_AMBER_ORE_PLACED_KEY)),
@@ -35,12 +43,22 @@ public class ModBiomeModifiers {
 
         context.register(ADD_PLATINUM_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.PLATINUM_PLACED_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.PLATINUM_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
         context.register(ADD_DEEPSLATE_PLATINUM_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.DEEPSLATE_PLATINUM_PLACED_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.DEEPSLATE_PLATINUM_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_FOSSIL_1, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.FOSSIL_1_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_FOSSIL_2, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.FOSSIL_2_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
     }
 

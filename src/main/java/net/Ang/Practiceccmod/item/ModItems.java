@@ -12,17 +12,43 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+
 public class ModItems {
+
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, Practiceccmod.MOD_ID);
 
     public static final RegistryObject<Item> TRICERATOPS_RIBCAGE = ITEMS.register("triceratops_ribcage",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> PINEAPPLE = ITEMS.register("pineapple",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.PINEAPPLE)));
+
     public static final RegistryObject<Item> FOSSIL_CUTTER = ITEMS.register("fossil_cutter",
             () -> new FossilCutterItem(new Item.Properties().durability(64)));
 
     public static final RegistryObject<Item> AMBER = ITEMS.register("amber",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> SYRINGE = ITEMS.register("syringe",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> TRICERATOPS_SYRINGE = ITEMS.register("triceratops_syringe",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> TRICERATOPS_SKULL = ITEMS.register("triceratops_skull",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> TAR = ITEMS.register("tar",
+            () -> new FuelItem(new Item.Properties(), 2400));
+
+    public static final RegistryObject<Item> SYRINGE_TIP = ITEMS.register("syringe_tip",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> PINEAPPLE_SEEDS = ITEMS.register("pineapple_seeds",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> MOSQUITO_IN_AMBER = ITEMS.register("mosquito_in_amber",
             () -> new Item(new Item.Properties()));
 
 public static final RegistryObject<Item> CABBAGE_SEEDS = ITEMS.register("cabbage_seeds",

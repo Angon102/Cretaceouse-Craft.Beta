@@ -1,10 +1,15 @@
 package net.Ang.Practiceccmod.datagen;
 
 import net.Ang.Practiceccmod.Practiceccmod;
+import net.Ang.Practiceccmod.block.ModBlocks;
 import net.Ang.Practiceccmod.item.ModItems;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
+import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.RegistryObject;
 
 
 public class ModItemModelProvider extends ItemModelProvider {
@@ -40,5 +45,20 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.TOMATO_SEEDS.get());
         basicItem(ModItems.CABBAGE.get());
         basicItem(ModItems.CABBAGE_SEEDS.get());
+        basicItem(ModItems.MOSQUITO_IN_AMBER.get());
+        basicItem(ModItems.SYRINGE_TIP.get());
+        basicItem(ModItems.SYRINGE.get());
+        basicItem(ModItems.TRICERATOPS_SKULL.get());
+        basicItem(ModItems.TRICERATOPS_SYRINGE.get());
+        basicItem(ModItems.TAR.get());
+        basicItem(ModItems.PINEAPPLE.get());
+        basicItem(ModItems.PINEAPPLE_SEEDS.get());
+
+        saplingItem(ModBlocks.GINKGOES_SAPLING);
+    }
+    private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/generated")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(Practiceccmod.MOD_ID,"block/" + item.getId().getPath()));
     }
 }
