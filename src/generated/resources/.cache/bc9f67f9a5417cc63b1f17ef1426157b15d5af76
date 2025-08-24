@@ -1,0 +1,7 @@
+// 1.21	2025-08-07T16:01:42.8240241	Tags for minecraft:block mod id practiceccmod
+77e3b27192d898b82c2d61dae059f637ebd23fae data/minecraft/tags/block/logs_that_burn.json
+9ba52c525b99db275d9cb31038b4c8de200854b3 data/minecraft/tags/block/mineable/pickaxe.json
+8511769c63a8ac4d0fb140f32e09850f7f07f929 data/minecraft/tags/block/needs_diamond_tool.json
+d1e01c810931a02a1a92fee8b0f000635bc3dd33 data/minecraft/tags/block/needs_iron_tool.json
+cea86e31c8e290552f63342b88864f375afacc1c data/minecraft/tags/block/needs_stone_tool.json
+8511769c63a8ac4d0fb140f32e09850f7f07f929 data/practiceccmod/tags/block/needs_platinum_tool.json

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 1.5,
+  "group": "egg",
+  "ingredient": {
+    "item": "practiceccmod:triceratops_egg"
+  },
+  "result": {
+    "id": "practiceccmod:cooked_dinosaur_egg"
+  }
+}

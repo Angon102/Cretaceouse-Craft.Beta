@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "practiceccmod:gypsum_powder"
+    },
+    "B": {
+      "item": "minecraft:paper"
+    },
+    "C": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "result": {
+    "count": 9,
+    "id": "practiceccmod:plaster_and_bandage"
+  }
+}

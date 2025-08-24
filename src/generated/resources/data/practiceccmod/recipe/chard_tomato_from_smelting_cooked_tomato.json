@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.5,
+  "group": "egg",
+  "ingredient": {
+    "item": "practiceccmod:cooked_tomato"
+  },
+  "result": {
+    "id": "practiceccmod:chard_tomato"
+  }
+}

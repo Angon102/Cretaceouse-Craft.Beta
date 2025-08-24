@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "practiceccmod:block/stripped_ginkgoes_wood_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "practiceccmod:block/stripped_ginkgoes_wood"
+    },
+    "axis=z": {
+      "model": "practiceccmod:block/stripped_ginkgoes_wood_horizontal",
+      "x": 90
+    }
+  }
+}

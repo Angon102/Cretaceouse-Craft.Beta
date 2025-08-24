@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "practiceccmod:platinum_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "practiceccmod:platinum_ingot"
+  }
+}

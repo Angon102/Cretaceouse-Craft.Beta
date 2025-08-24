@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "practiceccmod:tar"
+    }
+  },
+  "pattern": [
+    "AA ",
+    "AA ",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "practiceccmod:tar_block"
+  }
+}

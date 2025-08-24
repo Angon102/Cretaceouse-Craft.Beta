@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "practiceccmod:item/cooked_dinosaur_egg"
+  }
+}

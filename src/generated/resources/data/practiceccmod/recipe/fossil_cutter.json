@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "practiceccmod:platinum_ingot"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    },
+    "C": {
+      "item": "minecraft:lapis_lazuli"
+    }
+  },
+  "pattern": [
+    " A ",
+    " A ",
+    "CBC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "practiceccmod:fossil_cutter"
+  }
+}

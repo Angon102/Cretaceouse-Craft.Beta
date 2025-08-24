@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "practiceccmod:amber"
+    },
+    "B": {
+      "item": "minecraft:stone_bricks"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "BAB",
+    "ABA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "practiceccmod:amber_stone_brick_block"
+  }
+}

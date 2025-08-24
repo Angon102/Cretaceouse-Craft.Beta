@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:glass"
+    },
+    "B": {
+      "item": "practiceccmod:syringe_tip"
+    }
+  },
+  "pattern": [
+    " A ",
+    " A ",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "practiceccmod:syringe"
+  }
+}

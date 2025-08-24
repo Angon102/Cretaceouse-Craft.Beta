@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "practiceccmod:cooked_dinosaur_egg_from_smoking_triceratops_egg"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_triceratops_egg": {
+      "conditions": {
+        "items": [
+          {
+            "items": "practiceccmod:triceratops_egg"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_triceratops_egg"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "practiceccmod:cooked_dinosaur_egg_from_smoking_triceratops_egg"
+    ]
+  }
+}

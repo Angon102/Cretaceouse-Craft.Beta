@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "practiceccmod:item/plaster_and_bandage"
+  }
+}
