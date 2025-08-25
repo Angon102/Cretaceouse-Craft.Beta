@@ -1,61 +1,29 @@
-[09Sep2024 11:44:13.864] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 17, --assetsDir, C:\Users\4248809\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, practiceCmod, --all, --output, C:\Users\4248809\Documents\new\src\generated\resources, --existing, C:\Users\4248809\Documents\new\src\main\resources]
-[09Sep2024 11:44:13.865] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Amazon.com Inc. OpenJDK 64-Bit Server VM 21.0.4+7-LTS
-[09Sep2024 11:44:13.865] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.1 starting: java version 21.0.4 by Amazon.com Inc.; OS Windows 10 arch amd64 version 10.0
-[09Sep2024 11:44:14.002] [main/WARN] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Configuration file C:\Users\4248809\Documents\new\run-data\config\fml.toml is not correct. Correcting
-[09Sep2024 11:44:14.004] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowSkipGLVersions] was corrected from null to []
-[09Sep2024 11:44:14.004] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowLogHelpMessage] was corrected from null to true
-[09Sep2024 11:44:14.004] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowSquir] was corrected from null to false
-[09Sep2024 11:44:14.004] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowShowCPU] was corrected from null to false
-[09Sep2024 11:44:14.033] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
-[09Sep2024 11:44:14.204] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///C:/Users/4248809/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/8ab114ac385e6dbdad5efafe28aba4df8120915f/mixin-0.8.7.jar!/ Service=ModLauncher Env=UNKNOWN
-[09Sep2024 11:44:15.194] [main/ERROR] [net.minecraftforge.fml.loading.moddiscovery.ModInfo/FATAL]: Invalid modId found in file C:\Users\4248809\Documents\new\build\sourcesSets\main - practiceCmod does not match the standard: ^[a-z][a-z0-9_]{1,63}$
-[09Sep2024 11:44:15.194] [main/ERROR] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Locator net.minecraftforge.fml.loading.moddiscovery.ClasspathLocator@2a389173 found an invalid mod file net.minecraftforge.fml.loading.moddiscovery.ModFileInfo@213860b8
-net.minecraftforge.fml.loading.moddiscovery.InvalidModFileException: Invalid modId found : practicecmod (main)
-	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21-51.0.33/net.minecraftforge.fml.loading.moddiscovery.ModInfo.<init>(ModInfo.java:65) ~[fmlloader-1.21-51.0.33.jar!/:?]
-	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21-51.0.33/net.minecraftforge.fml.loading.moddiscovery.ModFileInfo.lambda$new$2(ModFileInfo.java:111) ~[fmlloader-1.21-51.0.33.jar!/:?]
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) ~[?:?]
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575) ~[?:?]
-	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) ~[?:?]
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616) ~[?:?]
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622) ~[?:?]
-	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627) ~[?:?]
-	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21-51.0.33/net.minecraftforge.fml.loading.moddiscovery.ModFileInfo.<init>(ModFileInfo.java:112) ~[fmlloader-1.21-51.0.33.jar!/:?]
-	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21-51.0.33/net.minecraftforge.fml.loading.moddiscovery.ModFileParser.modsTomlParser(ModFileParser.java:47) ~[fmlloader-1.21-51.0.33.jar!/:?]
-	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21-51.0.33/net.minecraftforge.fml.loading.moddiscovery.ModFileParser.readModList(ModFileParser.java:31) ~[fmlloader-1.21-51.0.33.jar!/:?]
-	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21-51.0.33/net.minecraftforge.fml.loading.moddiscovery.ModFile.<init>(ModFile.java:71) ~[fmlloader-1.21-51.0.33.jar!/:?]
-	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21-51.0.33/net.minecraftforge.fml.loading.moddiscovery.ModFile.<init>(ModFile.java:60) ~[fmlloader-1.21-51.0.33.jar!/:?]
-	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21-51.0.33/net.minecraftforge.fml.loading.moddiscovery.AbstractModProvider.createMod(AbstractModProvider.java:63) ~[fmlloader-1.21-51.0.33.jar!/:?]
-	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21-51.0.33/net.minecraftforge.fml.loading.moddiscovery.AbstractModProvider.createMod(AbstractModProvider.java:45) ~[fmlloader-1.21-51.0.33.jar!/:?]
-	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21-51.0.33/net.minecraftforge.fml.loading.moddiscovery.AbstractModProvider.createMod(AbstractModProvider.java:40) ~[fmlloader-1.21-51.0.33.jar!/:?]
-	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21-51.0.33/net.minecraftforge.fml.loading.moddiscovery.ClasspathLocator.scanMods(ClasspathLocator.java:78) ~[fmlloader-1.21-51.0.33.jar!/:?]
-	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21-51.0.33/net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer.discoverMods(ModDiscoverer.java:82) ~[fmlloader-1.21-51.0.33.jar!/:?]
-	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21-51.0.33/net.minecraftforge.fml.loading.FMLLoader.beginModScan(FMLLoader.java:154) ~[fmlloader-1.21-51.0.33.jar!/:51.0.33]
-	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21-51.0.33/net.minecraftforge.fml.loading.FMLServiceProvider.beginScanning(FMLServiceProvider.java:58) ~[fmlloader-1.21-51.0.33.jar!/:51.0.33]
-	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.1/cpw.mods.modlauncher.TransformationServiceDecorator.runScan(TransformationServiceDecorator.java:98) ~[modlauncher-10.2.1.jar!/:?]
-	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.1/cpw.mods.modlauncher.TransformationServicesHandler.lambda$runScanningTransformationServices$7(TransformationServicesHandler.java:96) ~[modlauncher-10.2.1.jar!/:?]
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) [?:?]
-	at java.base/java.util.HashMap$ValueSpliterator.forEachRemaining(HashMap.java:1787) [?:?]
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) [?:?]
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) [?:?]
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575) [?:?]
-	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) [?:?]
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616) [?:?]
-	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622) [?:?]
-	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627) [?:?]
-	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.1/cpw.mods.modlauncher.TransformationServicesHandler.runScanningTransformationServices(TransformationServicesHandler.java:98) [modlauncher-10.2.1.jar!/:?]
-	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.1/cpw.mods.modlauncher.TransformationServicesHandler.initializeTransformationServices(TransformationServicesHandler.java:49) [modlauncher-10.2.1.jar!/:?]
-	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.1/cpw.mods.modlauncher.Launcher.run(Launcher.java:88) [modlauncher-10.2.1.jar!/:?]
-	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.1/cpw.mods.modlauncher.Launcher.main(Launcher.java:75) [modlauncher-10.2.1.jar!/:?]
-	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.1/cpw.mods.modlauncher.BootstrapEntry.main(BootstrapEntry.java:17) [modlauncher-10.2.1.jar!/:?]
-	at net.minecraftforge.bootstrap@2.1.3/net.minecraftforge.bootstrap.Bootstrap.moduleMain(Bootstrap.java:188) [bootstrap-2.1.3.jar!/:?]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
-	at net.minecraftforge.bootstrap.Bootstrap.bootstrapMain(Bootstrap.java:133) [bootstrap-2.1.3.jar:2.1.3]
-	at net.minecraftforge.bootstrap.Bootstrap.start(Bootstrap.java:53) [bootstrap-2.1.3.jar:2.1.3]
-	at net.minecraftforge.bootstrap.ForgeBootstrap.main(ForgeBootstrap.java:19) [bootstrap-2.1.3.jar:2.1.3]
-[09Sep2024 11:44:15.411] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[09Sep2024 11:44:15.444] [main/ERROR] [net.minecraftforge.fml.loading.LanguageLoadingProvider/LOADING]: Missing language minecraft version 1 wanted by 
-[09Sep2024 11:44:15.444] [main/ERROR] [net.minecraftforge.fml.loading.LanguageLoadingProvider/LOADING]: Missing language javafml version [24,] wanted by 
+[24Aug2025 17:25:02.531] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 17, --assetsDir, C:\Users\4248809\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, practiceccmod, --all, --output, C:\Users\4248809\Documents\Cretaceouse-Craft.Beta\src\generated\resources, --existing, C:\Users\4248809\Documents\Cretaceouse-Craft.Beta\src\main\resources]
+[24Aug2025 17:25:02.531] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Microsoft OpenJDK 64-Bit Server VM 21.0.8+9-LTS
+[24Aug2025 17:25:02.547] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.1 starting: java version 21.0.8 by Microsoft; OS Windows 11 arch amd64 version 10.0
+[24Aug2025 17:25:02.666] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
+[24Aug2025 17:25:02.809] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///C:/Users/4248809/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/8ab114ac385e6dbdad5efafe28aba4df8120915f/mixin-0.8.7.jar!/ Service=ModLauncher Env=UNKNOWN
+[24Aug2025 17:25:03.723] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[24Aug2025 17:25:04.463] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\4248809\.gradle\caches\forge_gradle\assets, --assetIndex, 17, --mod, practiceccmod, --all, --output, C:\Users\4248809\Documents\Cretaceouse-Craft.Beta\src\generated\resources, --existing, C:\Users\4248809\Documents\Cretaceouse-Craft.Beta\src\main\resources]
+[24Aug2025 17:25:09.301] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 51.0.33, for MC 1.21 with MCP 20240613.102039
+[24Aug2025 17:25:09.301] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v51.0.33 Initialized
+[24Aug2025 17:25:09.325] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
+[24Aug2025 17:25:09.988] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [practiceccmod]
+[24Aug2025 17:25:10.066] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/4248809/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.33_mapped_parchment_2024.07.28-1.21/forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21-recomp.jar%230!/assets/.mcassetsroot' uses unexpected schema
+[24Aug2025 17:25:10.066] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/4248809/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.33_mapped_parchment_2024.07.28-1.21/forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21-recomp.jar%230!/data/.mcassetsroot' uses unexpected schema
+[24Aug2025 17:25:10.239] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[24Aug2025 17:25:10.488] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 249 ms
+[24Aug2025 17:25:10.488] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[24Aug2025 17:25:10.540] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 60 ms
+[24Aug2025 17:25:10.540] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id practiceccmod
+[24Aug2025 17:25:10.559] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id practiceccmod finished after 11 ms
+[24Aug2025 17:25:10.563] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id practiceccmod
+[24Aug2025 17:25:10.563] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id practiceccmod finished after 1 ms
+[24Aug2025 17:25:10.563] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: practiceccmod
+[24Aug2025 17:25:10.579] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: practiceccmod finished after 15 ms
+[24Aug2025 17:25:10.579] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: practiceccmod
+[24Aug2025 17:25:10.713] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: practiceccmod finished after 137 ms
+[24Aug2025 17:25:10.713] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
+[24Aug2025 17:25:10.713] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 6 ms
+[24Aug2025 17:25:10.713] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 485 ms
+[24Aug2025 17:25:10.729] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 235, old count: 235, new count: 236, removed stale: 0, written: 0
