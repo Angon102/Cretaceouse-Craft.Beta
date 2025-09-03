@@ -2,6 +2,7 @@ package net.Ang.Practiceccmod;
 
 import com.mojang.logging.LogUtils;
 import net.Ang.Practiceccmod.block.ModBlocks;
+import net.Ang.Practiceccmod.block.entity.ModBlockEntities;
 import net.Ang.Practiceccmod.item.ModCreativeModeTabs;
 import net.Ang.Practiceccmod.item.ModItems;
 import net.Ang.Practiceccmod.screen.ModMenuTypes;
@@ -11,6 +12,7 @@ import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -44,13 +46,14 @@ public class Practiceccmod {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
-        modEventBus.addListener(this::commonSetup);
-
         MinecraftForge.EVENT_BUS.register(this);
-        modEventBus.addListener(this::addCreative);
+
+        ModBlockEntities.register(modEventBus);
+
+        ModMenuTypes.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
-
         // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
@@ -87,13 +90,18 @@ public class Practiceccmod {
     public void onServerStarting(ServerStartingEvent event) {
 
     }
-
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
-        public static void onClientSetup(FMLClientSetupEvent event){
-            MenuScreens.register(ModMenuTypes.CLEANING_STATION_MENU.get(), CleaningStationScreen::new);
+        @SubscribeEvent
+        public static void onClientSetup(FMLClientSetupEvent event) {
 
+            MenuScreens.register(ModMenuTypes.CLEANING_STATION_MENU.get(), CleaningStationScreen::new);
+        }
+
+
+        @SubscribeEvent
+        public static void registerBER(EntityRenderersEvent.RegisterRenderers event) {
 
         }
 

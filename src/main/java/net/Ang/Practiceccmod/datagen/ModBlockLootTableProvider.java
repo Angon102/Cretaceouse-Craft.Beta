@@ -48,8 +48,6 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.STRIPPED_GINKGOES_WOOD.get());
         dropSelf(ModBlocks.STRIPPED_GINKGOES_LOG.get());
 
-        dropSelf(ModBlocks.CLEANING_STATION.get());
-
         this.add(ModBlocks.GINKGOES_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.GINKGOES_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         this.add(ModBlocks.AMBER_ORE.get(),

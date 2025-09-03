@@ -41,6 +41,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.PLATINUM_BLOCK);
         blockWithItem(ModBlocks.RAW_PLATINUM_BLOCK);
         blockWithItem(ModBlocks.DEEPSLATE_PLATINUM_ORE);
+        blockWithItem(ModBlocks.CLEANING_STATION);
+
 
 
         logBlock(ModBlocks.GINKGOES_LOG.get());

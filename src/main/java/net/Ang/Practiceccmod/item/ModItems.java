@@ -98,7 +98,7 @@ public static final RegistryObject<Item> CABBAGE_SEEDS = ITEMS.register("cabbage
 
     public static final RegistryObject<Item> PLATINUM_HAMMER = ITEMS.register("platinum_hammer",
             () -> new HammerItem(ModToolTiers.PLATINUM, new Item.Properties()
-                    .attributes(PickaxeItem.createAttributes(ModToolTiers.PLATINUM, 5000000, -0.0f))));
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.PLATINUM, 999999999, -0.3f))));
     public static final RegistryObject<Item> PLATINUM_PICKAXE = ITEMS.register("platinum_pickaxe",
             () -> new PickaxeItem(ModToolTiers.PLATINUM, new Item.Properties()
                     .attributes(PickaxeItem.createAttributes(ModToolTiers.PLATINUM, 2, -2.8f))));

@@ -93,7 +93,7 @@ public class ModBlocks {
                     .noOcclusion()
                     .noCollission()));
 
-    public static final  RegistryObject<Block> CLEANING_STATION = registerBlock( "cleaning_station",
+    public static final  RegistryObject<Block> CLEANING_STATION = registerBlock("cleaning_station",
             () -> new CleaningStationBlock(BlockBehaviour.Properties.of()));
 
     public static final RegistryObject<Block> AMBER_BLOCK = registerBlock( "amber_block",
